@@ -899,7 +899,7 @@ body.about-open .stack,body.about-open .site-footer{display:none}
   body.about-open .about::before{content:"";display:block;flex:1 1 0;max-height:min(9vw,110px)}
   body.about-open .about::after{content:"";display:block;flex:1 1 0}
 }
-/* tablet stretto (481-818px): sfondo a quadretti anche sotto le marquees; il folder antracite arriva fino alle marquees come prima */
+/* tablet stretto (481-818px): la pagina riempie lo schermo; il folder antracite arriva fino alle marquees e sotto resta antracite */
 @media (min-width:481px) and (max-width:818px){
   body.about-open{display:flex;flex-direction:column;
     min-height:calc(100vh - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px));
@@ -908,8 +908,10 @@ body.about-open .stack,body.about-open .site-footer{display:none}
   body.about-open .about{display:flex;flex-direction:column;flex:1 0 auto;
     background-color:#fafafa;background-image:var(--grid);background-size:var(--grid-s) var(--grid-s)}
   body.about-open .about::before{position:static;display:block;height:auto;background:none;flex:1 1 0;max-height:min(9vw,70px)}
-  body.about-open .about::after{content:"";display:block;flex:1 1 0}
-  /* lo spazio che separava folder e marquees passa dentro al folder: stesso aspetto, ma lo sfondo sotto e' a quadretti */
+  /* sotto le marquees: antracite (come il folder), mai i quadretti; il padding-bottom passa dentro lo spazio antracite */
+  body.about-open .about{padding-bottom:0}
+  body.about-open .about::after{content:"";display:block;flex:1 1 0;background:var(--ink);min-height:calc(clamp(36px,9vw,64px) + env(safe-area-inset-bottom,0px))}
+  /* lo spazio che separava folder e marquees passa dentro al folder: stesso aspetto */
   body.about-open .marq{margin-top:0}
   body.about-open .af-content{padding-bottom:calc(clamp(14px,4cqw,26px) + clamp(12px,3vw,20px))}
 }
