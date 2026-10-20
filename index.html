@@ -322,6 +322,9 @@ a:focus-visible{outline:3px solid #1b6fd1;outline-offset:3px}
 .site-footer{position:relative;height:0;padding:0;font-size:14px;line-height:var(--lh);color:var(--ink);
   display:flex;flex-wrap:wrap;align-items:center;align-content:center;justify-content:space-between;gap:4px 12px}
 .site-footer a{color:var(--wine)}
+.site-footer .copyright{position:absolute;left:0;right:0;bottom:max(16px,env(safe-area-inset-bottom));margin:0;padding:0 16px;text-align:center;
+  font-family:var(--sans);font-size:clamp(8.5px,2.5vw,10.5px);line-height:1.4;letter-spacing:var(--track);text-transform:uppercase;color:var(--ink);opacity:.7}
+.site-footer .copyright{padding-left:calc(16px + var(--track))}
 
 @media (max-width:700px){
   :root{--row-base:clamp(140px,40vw,190px)}
@@ -341,6 +344,9 @@ a:focus-visible{outline:3px solid #1b6fd1;outline-offset:3px}
   .folder{--tab-h:calc(var(--row)*.36)}
   .stack{padding-top:calc(var(--row)*.64)}
   .tab{width:58%}
+  /* ultimo folder (crema): sotto la linguetta alto come gli altri (row - linguetta); sugli schermi alti riempie comunque fino in fondo */
+  .folder:last-child{--lb:max(calc(var(--row)*.64),calc(100vh - 65px - var(--row)*4));height:calc(var(--tab-h) + var(--lb))}
+  .folder:last-child .body{height:var(--lb)}
   .tab span{font-size:clamp(12px,3.3vw,19px);padding-top:.7em}
   .tab-r .tab{right:5%}.tab-l .tab{left:5%}
   .polaroid{width:21%;top:calc(var(--row)*-.02);padding:3px 3px 0}
@@ -1268,7 +1274,7 @@ body.about-open .stack,body.about-open .site-footer{display:none}
     <div class="marq-row t" role="group" aria-label="Tools"><div class="marq-track"><ul class="marq-list"><li>Adobe Creative Suite</li><li>Figma</li><li>Canva</li><li>CapCut</li><li>DaVinci Resolve</li><li>Framer</li><li>Elementor</li><li>WordPress</li><li>Jitter</li></ul><ul class="marq-list" aria-hidden="true"><li>Adobe Creative Suite</li><li>Figma</li><li>Canva</li><li>CapCut</li><li>DaVinci Resolve</li><li>Framer</li><li>Elementor</li><li>WordPress</li><li>Jitter</li></ul></div></div>
   </div>
 </section>
-<footer class="site-footer" id="contact"></footer>
+<footer class="site-footer" id="contact"><p class="copyright">&copy; 2026 Eleonora Di Maria &middot; All rights reserved</p></footer>
 <script>
 (function(){
   var wrap=document.querySelector('.contact-wrap');if(!wrap)return;
