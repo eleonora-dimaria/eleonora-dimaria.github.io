@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://eleonora-dimaria.github.io/sitemap.xml

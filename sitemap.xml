@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://eleonora-dimaria.github.io/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image><image:loc>https://eleonora-dimaria.github.io/img/seo/og-image.jpg</image:loc></image:image>
+    <image:image><image:loc>https://eleonora-dimaria.github.io/img/about/headshot.webp</image:loc></image:image>
+    <image:image><image:loc>https://eleonora-dimaria.github.io/img/club-essenzia/hero.webp</image:loc></image:image>
+    <image:image><image:loc>https://eleonora-dimaria.github.io/img/sideful/hero.webp</image:loc></image:image>
+    <image:image><image:loc>https://eleonora-dimaria.github.io/img/the-unique-group/hero.jpg</image:loc></image:image>
+    <image:image><image:loc>https://eleonora-dimaria.github.io/img/the-unique-group/gallery.jpg</image:loc></image:image>
+    <image:image><image:loc>https://eleonora-dimaria.github.io/img/tug-website/hero.webp</image:loc></image:image>
+    <image:image><image:loc>https://eleonora-dimaria.github.io/img/music-nightlife/background.webp</image:loc></image:image>
+    <image:image><image:loc>https://eleonora-dimaria.github.io/img/luxury-suites/background.webp</image:loc></image:image>
+    <image:image><image:loc>https://eleonora-dimaria.github.io/img/property-management/background.webp</image:loc></image:image>
+    <image:image><image:loc>https://eleonora-dimaria.github.io/img/student-volunteer-group/background.webp</image:loc></image:image>
+    <image:image><image:loc>https://eleonora-dimaria.github.io/img/luxury-events/background.webp</image:loc></image:image>
+  </url>
+</urlset>
